@@ -14,6 +14,8 @@ namespace PadariaWebMvc.Data
         {
         }
 
-        public DbSet<PadariaWebMvc.Models.Client> Client { get; set; }
+        public DbSet<Client> Client { get; set; }
+        public DbSet<Product> Product { get; set; }
+        // public DbSet<Vendas> Vendas { get; set; }
     }
 }
