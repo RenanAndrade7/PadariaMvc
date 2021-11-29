@@ -9,8 +9,8 @@ using PadariaWebMvc.Data;
 namespace PadariaWebMvc.Migrations
 {
     [DbContext(typeof(PadariaWebMvcContext))]
-    [Migration("20211120211830_initial")]
-    partial class initial
+    [Migration("20211128164629_segunda")]
+    partial class segunda
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,6 +23,8 @@ namespace PadariaWebMvc.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Email");
 
                     b.Property<string>("Name");
 

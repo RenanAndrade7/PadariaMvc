@@ -1,21 +1,20 @@
-﻿@model PadariaWebMvc.Models.Client
+﻿@model PadariaWebMvc.Models.ViewModels.ClientProductformViewModel
 
-@{
-    ViewData["Title"] = "Create";
-}
+<h2>Criar</h2>
 
-<h2>Create</h2>
-
-<h4>Client</h4>
+<h4>Cliente</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <label asp-for="Client.Name" class="control-label"></label>
+                <input asp-for="Client.Name" class="form-control" />
+                <span asp-validation-for="Client.Name" class="text-danger"></span>
+                <label asp-for="Client.Email" class="control-label"></label>
+                <input asp-for="Client.Email" class="form-control" />
+                <span asp-validation-for="Client.Email" class="text-danger"></span> 
             </div>
             <div class="form-group">
                 <input type="submit" value="Criar" class="btn btn-default" />

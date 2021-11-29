@@ -11,14 +11,16 @@ namespace PadariaWebMvc.Models
 
         public double Valor { get; set; }
         public ICollection<Client> Client{ get; set; } = new List<Client>();
+        public Product()
+        {
 
+        }
         public Product(int id, string name, double valor)
         {
             Id = id;
             Name = name;
             Valor = valor;
         }
-
 
         /* public ICollection<Vendas> Vendas { get; set; } = new List<Vendas>();
 

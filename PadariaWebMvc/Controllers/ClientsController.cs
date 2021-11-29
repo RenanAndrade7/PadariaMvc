@@ -7,16 +7,20 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PadariaWebMvc.Data;
 using PadariaWebMvc.Models;
+using PadariaWebMvc.Services;
+using PadariaWebMvc.Models.ViewModels;
 
 namespace PadariaWebMvc.Controllers
 {
     public class ClientsController : Controller
     {
         private readonly PadariaWebMvcContext _context;
+        private readonly ProductServices _productServices;
 
-        public ClientsController(PadariaWebMvcContext context)
+        public ClientsController(PadariaWebMvcContext context, ProductServices productServices)
         {
             _context = context;
+            _productServices = productServices;
         }
 
         // GET: Clients
@@ -54,7 +58,7 @@ namespace PadariaWebMvc.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name")] Client client)
+        public async Task<IActionResult> Create([Bind("Id,Name,Email")] Client client)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +90,7 @@ namespace PadariaWebMvc.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] Client client)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Email")] Client client)
         {
             if (id != client.Id)
             {

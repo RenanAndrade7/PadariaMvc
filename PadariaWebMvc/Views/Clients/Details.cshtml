@@ -1,13 +1,9 @@
 ﻿@model PadariaWebMvc.Models.Client
 
-@{
-    ViewData["Title"] = "Detalhes";
-}
-
-<h2>Details</h2>
+<h2>Detalhes</h2>
 
 <div>
-    <h4>Client</h4>
+    <h4>Cliente</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -15,6 +11,12 @@
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
         </dd>
     </dl>
 </div>
