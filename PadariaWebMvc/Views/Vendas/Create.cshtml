@@ -1,0 +1,44 @@
+﻿@{
+    /* @model PadariaWebMvc.Models.ViewModels.VendasFormViewModel
+
+<h2>Cadastro</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div class="form-group">
+                <dt>
+                    <label asp-for="Client" class="control-label"></label>
+                </dt>
+                <dd>
+                    <select asp-for="Client" asp-items="@(new SelectList(Model.Clients,"Id","Name"))" class="form-control"></select>
+                </dd>
+
+                <dt>
+                    <label asp-for="DateVendas" class="control-label"></label>
+                </dt>
+                <dd>
+                    @Html.TextBoxFor(p => p.DateVendas, new { @type = "date" })
+                </dd>
+
+                <dt>
+                    <label asp-for="Status" class="control-label"></label>
+                </dt>
+                <dd>
+                    <select asp-for="Status" asp-items="@(new SelectList(Model.VendasStatus,"Indice","Texto"))" class="form-control"></select>
+                </dd>
+
+                <dt>
+                    <label asp-for="Quantia" class="control-label"></label>
+                </dt>
+                <dd>
+                    @Html.TextBoxFor(p => p.Quantia)
+                </dd>
+                </dl>
+            </div>
+            <input type="submit" value="Create" class="btn btn-default" />
+        </form>
+    </div>
+</div>
+    */
+}

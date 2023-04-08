@@ -9,8 +9,8 @@ using PadariaWebMvc.Data;
 namespace PadariaWebMvc.Migrations
 {
     [DbContext(typeof(PadariaWebMvcContext))]
-    [Migration("20211128164629_segunda")]
-    partial class segunda
+    [Migration("20230401230933_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -1,4 +1,4 @@
-﻿namespace PadariaWebMvc.Models.Enums
+﻿/* namespace PadariaWebMvc.Models.Enums
 {
     public enum VendasStatus : int
     {
@@ -7,3 +7,4 @@
         cancelado = 2
     }
 }
+*/

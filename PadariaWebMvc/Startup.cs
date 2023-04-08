@@ -42,6 +42,7 @@ namespace PadariaWebMvc
                          builder.MigrationsAssembly("PadariaWebMvc")));
 
             // services.AddScoped<SeedingService>();
+            // services.AddScoped<VendasServices();
             services.AddScoped<ProductServices>();
             services.AddScoped<ClientServices>();
         }

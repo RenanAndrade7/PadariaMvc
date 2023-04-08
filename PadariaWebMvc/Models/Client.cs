@@ -1,5 +1,4 @@
-﻿using PadariaWebMvc.Models.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -13,6 +12,8 @@ namespace PadariaWebMvc.Models
         public string Email { get; set; }
 
         public Product Product  { get; set; }
+
+        // public ICollection<Vendas> Vendas { get; set; } = new List<Vendas>();
 
         public Client()
         {
